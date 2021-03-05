@@ -22,7 +22,7 @@
 		111F07B52407B4BF003B90A5 /* WKWebView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKWebView+Ext.swift"; sourceTree = "<group>"; };
 		111F07B924080BEE003B90A5 /* betterroam.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = betterroam.css; sourceTree = "<group>"; };
 		111F07BB240812E7003B90A5 /* betterroam.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = betterroam.js; sourceTree = "<group>"; };
-		11799EE72406102F009049FD /* RoamMobile.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RoamMobile.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		11799EE72406102F009049FD /* BuilderConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuilderConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11799EEA2406102F009049FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		11799EEC2406102F009049FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		11799EEE2406102F009049FD /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -47,7 +47,7 @@
 		11799EDE2406102F009049FD = {
 			isa = PBXGroup;
 			children = (
-				11799EE92406102F009049FD /* RoamMobile */,
+				11799EE92406102F009049FD /* BuilderConnect */,
 				11799EE82406102F009049FD /* Products */,
 				11799EFE24063DEA009049FD /* README.md */,
 			);
@@ -56,12 +56,12 @@
 		11799EE82406102F009049FD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				11799EE72406102F009049FD /* RoamMobile.app */,
+				11799EE72406102F009049FD /* BuilderConnect.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		11799EE92406102F009049FD /* RoamMobile */ = {
+		11799EE92406102F009049FD /* BuilderConnect */ = {
 			isa = PBXGroup;
 			children = (
 				11799EEA2406102F009049FD /* AppDelegate.swift */,
@@ -75,15 +75,15 @@
 				111F07BB240812E7003B90A5 /* betterroam.js */,
 				111F07B52407B4BF003B90A5 /* WKWebView+Ext.swift */,
 			);
-			path = RoamMobile;
+			path = BuilderConnect;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		11799EE62406102F009049FD /* RoamMobile */ = {
+		11799EE62406102F009049FD /* BuilderConnect */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 11799EFB24061031009049FD /* Build configuration list for PBXNativeTarget "RoamMobile" */;
+			buildConfigurationList = 11799EFB24061031009049FD /* Build configuration list for PBXNativeTarget "BuilderConnect" */;
 			buildPhases = (
 				11799EE32406102F009049FD /* Sources */,
 				11799EE42406102F009049FD /* Frameworks */,
@@ -93,9 +93,9 @@
 			);
 			dependencies = (
 			);
-			name = RoamMobile;
+			name = BuilderConnect;
 			productName = RoamMobile;
-			productReference = 11799EE72406102F009049FD /* RoamMobile.app */;
+			productReference = 11799EE72406102F009049FD /* BuilderConnect.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -106,14 +106,14 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1130;
 				LastUpgradeCheck = 1200;
-				ORGANIZATIONNAME = "Daniel Aditya Istyana";
+				ORGANIZATIONNAME = "Thomas Herring";
 				TargetAttributes = {
 					11799EE62406102F009049FD = {
 						CreatedOnToolsVersion = 11.3;
 					};
 				};
 			};
-			buildConfigurationList = 11799EE22406102F009049FD /* Build configuration list for PBXProject "RoamMobile" */;
+			buildConfigurationList = 11799EE22406102F009049FD /* Build configuration list for PBXProject "BuilderConnect" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -126,7 +126,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				11799EE62406102F009049FD /* RoamMobile */,
+				11799EE62406102F009049FD /* BuilderConnect */,
 			);
 		};
 /* End PBXProject section */
@@ -305,12 +305,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = A8R5ZXRW2Z;
-				INFOPLIST_FILE = RoamMobile/Info.plist;
+				INFOPLIST_FILE = BuilderConnect/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.adityadaniel.RoamResearchMobile;
+				PRODUCT_BUNDLE_IDENTIFIER = com.th3rring.BuilderConnect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -324,12 +324,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 8;
 				DEVELOPMENT_TEAM = A8R5ZXRW2Z;
-				INFOPLIST_FILE = RoamMobile/Info.plist;
+				INFOPLIST_FILE = BuilderConnect/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.adityadaniel.RoamResearchMobile;
+				PRODUCT_BUNDLE_IDENTIFIER = com.th3rring.BuilderConnect;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -339,7 +339,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		11799EE22406102F009049FD /* Build configuration list for PBXProject "RoamMobile" */ = {
+		11799EE22406102F009049FD /* Build configuration list for PBXProject "BuilderConnect" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				11799EF924061031009049FD /* Debug */,
@@ -348,7 +348,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		11799EFB24061031009049FD /* Build configuration list for PBXNativeTarget "RoamMobile" */ = {
+		11799EFB24061031009049FD /* Build configuration list for PBXNativeTarget "BuilderConnect" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				11799EFC24061031009049FD /* Debug */,

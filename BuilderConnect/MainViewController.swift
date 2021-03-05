@@ -29,15 +29,15 @@ class MainViewController: UIViewController {
     
     func setupWebView() {
         
-        if let disableZoomScript = generateMetaViewportScript() {
-            wkController.addUserScript(disableZoomScript)
-        }
+//        if let disableZoomScript = generateMetaViewportScript() {
+//            wkController.addUserScript(disableZoomScript)
+//        }
         
         config.applicationNameForUserAgent = "Version/8.0.2 Safari/600.2.5"
         config.userContentController = wkController
         
         webView = WKWebView(frame: .zero, configuration: config)
-        let url = URL(string: "https://roamresearch.com/#/app")
+        let url = URL(string: "192.168.86.43:10000")
         let urlRequest = URLRequest(url: url!, cachePolicy: .useProtocolCachePolicy)
         webView.load(urlRequest)
     
