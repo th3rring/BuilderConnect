@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/clherring/Documents/BuilderConnect/BuilderConnect.xcodeproj">
+      location = "group:../BuilderConnect/xpra-html5/html5">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>

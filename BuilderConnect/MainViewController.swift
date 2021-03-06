@@ -37,8 +37,14 @@ class MainViewController: UIViewController {
         config.userContentController = wkController
         
         webView = WKWebView(frame: .zero, configuration: config)
-        let url = URL(string: "192.168.86.43:10000")
-        let urlRequest = URLRequest(url: url!, cachePolicy: .useProtocolCachePolicy)
+        
+        
+        
+//        let url = Bundle.main.url(forResource: "connect", withExtension: "html", subdirectory: "html5")!
+//        let url = URL(string: "therring.cloud:10000")!
+        let url = URL(string: "www.google.com")!
+//        webView.loadFileURL(url, allowingReadAccessTo: url)
+        let urlRequest = URLRequest(url: url, cachePolicy: .useProtocolCachePolicy)
         webView.load(urlRequest)
     
         webView.translatesAutoresizingMaskIntoConstraints = false
