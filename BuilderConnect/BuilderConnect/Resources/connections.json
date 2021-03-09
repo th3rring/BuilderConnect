@@ -1,0 +1,19 @@
+[
+{
+    "name": "Pop!_OS Local",
+    "id": 1001,
+    "protocal" : "http://",
+    "address" : "192.168.86.43",
+    "port" : "10000",
+    "iconName" : "desktopcomputer"
+},
+
+{
+    "name": "Pop!_OS Remote",
+    "id": 1002,
+    "protocal" : "http://",
+    "address" : "therring.cloud",
+    "port" : "10000",
+    "iconName" : "server.rack"
+},
+]

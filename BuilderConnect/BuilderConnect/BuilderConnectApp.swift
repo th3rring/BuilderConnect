@@ -1,0 +1,20 @@
+//
+//  BuilderConnectApp.swift
+//  BuilderConnect
+//
+//  Created by Catherine Herring on 2021-03-09.
+//
+
+import SwiftUI
+
+@main
+struct LandmarksApp: App {
+    @StateObject private var modelData = ModelData()
+    
+    var body: some Scene {
+        WindowGroup {
+            ContentView()
+                .environmentObject(modelData)
+        }
+    }
+}
