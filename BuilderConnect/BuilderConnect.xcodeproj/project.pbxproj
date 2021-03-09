@@ -20,6 +20,7 @@
 		22850F6C25F76F8E008F6091 /* connections.json in Resources */ = {isa = PBXBuildFile; fileRef = 22850F6B25F76F8E008F6091 /* connections.json */; };
 		22850F6F25F77376008F6091 /* ConnectionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22850F6E25F77376008F6091 /* ConnectionList.swift */; };
 		22850F7125F7744F008F6091 /* ConnectionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22850F7025F7744F008F6091 /* ConnectionRow.swift */; };
+		22B63D5625F81C960089BBEB /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B63D5525F81C960089BBEB /* LocationManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +60,7 @@
 		22850F6B25F76F8E008F6091 /* connections.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = connections.json; sourceTree = "<group>"; };
 		22850F6E25F77376008F6091 /* ConnectionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionList.swift; sourceTree = "<group>"; };
 		22850F7025F7744F008F6091 /* ConnectionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionRow.swift; sourceTree = "<group>"; };
+		22B63D5525F81C960089BBEB /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 		22850F3525F7665F008F6091 /* BuilderConnect */ = {
 			isa = PBXGroup;
 			children = (
+				22B63D5425F81C5F0089BBEB /* Location */,
 				22850F3625F7665F008F6091 /* BuilderConnectApp.swift */,
 				22850F6D25F76F98008F6091 /* Resources */,
 				22850F6A25F76E6D008F6091 /* Model */,
@@ -173,6 +176,14 @@
 				22850F6B25F76F8E008F6091 /* connections.json */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		22B63D5425F81C5F0089BBEB /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				22B63D5525F81C960089BBEB /* LocationManager.swift */,
+			);
+			path = Location;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -308,6 +319,7 @@
 				22850F3925F7665F008F6091 /* ContentView.swift in Sources */,
 				22850F6925F76E5B008F6091 /* Connection.swift in Sources */,
 				22850F6525F76815008F6091 /* WebView.swift in Sources */,
+				22B63D5625F81C960089BBEB /* LocationManager.swift in Sources */,
 				22850F6225F766E3008F6091 /* ConnectionView.swift in Sources */,
 				22850F3725F7665F008F6091 /* BuilderConnectApp.swift in Sources */,
 				22850F7125F7744F008F6091 /* ConnectionRow.swift in Sources */,

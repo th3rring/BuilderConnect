@@ -9,16 +9,32 @@ import SwiftUI
 
 struct ConnectionList: View {
     @EnvironmentObject var modelData: ModelData
-    @State private var trackPosition = false
-    @State private var isShowingDetailView = false
+    @ObservedObject var locationManager = LocationManager()
+
+    @State private var trackPosition = false{
+        didSet{
+            print("condition changed to \(trackPosition)")
+            if trackPosition {
+                locationManager.startTracking()
+            } else {
+                locationManager.stopTracking()
+            }
+        }
+    }
 
 //    @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
     var body: some View {
-        NavigationView {
+        
+        let bind = Binding<Bool>(
+                  get:{self.trackPosition},
+                  set:{self.trackPosition = $0}
+                )
+        
+        return NavigationView {
             List {
 
-                Toggle(isOn: $trackPosition) {
+                Toggle(isOn: bind) {
                     Text("Keep connection")
                 }
                 
