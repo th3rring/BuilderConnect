@@ -69,6 +69,7 @@ public struct WebView: View, UIViewRepresentable {
   }
   
   public func makeUIView(context: UIViewRepresentableContext<WebView>) -> WKWebView {
+    
     webView
   }
   

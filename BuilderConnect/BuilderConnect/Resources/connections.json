@@ -12,7 +12,7 @@
     "name": "Pop!_OS Remote",
     "id": 1002,
     "protocal" : "http://",
-    "address" : "therring.cloud",
+    "address" : "100.96.1.18",
     "port" : "10000",
     "iconName" : "server.rack"
 },

@@ -10,6 +10,8 @@ class LocationManager: NSObject, ObservableObject {
         self.locationManager.desiredAccuracy = kCLLocationAccuracyBest
         self.locationManager.requestWhenInUseAuthorization()
         self.locationManager.stopUpdatingLocation()
+        self.locationManager.allowsBackgroundLocationUpdates = true
+        self.locationManager.showsBackgroundLocationIndicator = true
     }
 
     @Published var locationStatus: CLAuthorizationStatus? {

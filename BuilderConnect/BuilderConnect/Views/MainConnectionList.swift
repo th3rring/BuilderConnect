@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ConnectionList: View {
+struct MainConnectionList: View {
     @EnvironmentObject var modelData: ModelData
     @ObservedObject var locationManager = LocationManager()
 
@@ -31,7 +31,7 @@ struct ConnectionList: View {
                   set:{self.trackPosition = $0}
                 )
         
-        return NavigationView {
+        return
             List {
                 
                 Toggle(isOn: bind) {
@@ -45,37 +45,26 @@ struct ConnectionList: View {
                     }
                 }
             }
-//            .navigationBarHidden(false)
-            .navigationBarBackButtonHidden(true)
-            .navigationTitle("Connections")
-            
-//            Text("Hello!")
-
         }
-        .navigationViewStyle(StackNavigationViewStyle())
-//        .navigationViewStyle(DoubleColumnNavigationViewStyle())
-//        .padding()
-
-
-    }
-}
-
-
-extension UINavigationController: UIGestureRecognizerDelegate {
-    override open func viewDidLoad() {
-        super.viewDidLoad()
-        interactivePopGestureRecognizer?.delegate = self
     }
 
-    public func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
-        return viewControllers.count > 1
-    }
-}
 
-struct ConnectionList_Previews: PreviewProvider {
+
+//extension UINavigationController: UIGestureRecognizerDelegate {
+//    override open func viewDidLoad() {
+//        super.viewDidLoad()
+//        interactivePopGestureRecognizer?.delegate = self
+//    }
+//
+//    public func gestureRecognizerShouldBegin(_ gestureRecognizer: UIGestureRecognizer) -> Bool {
+//        return viewControllers.count > 1
+//    }
+//}
+
+struct MainConnectionList_Previews: PreviewProvider {
     static var previews: some View {
         ForEach(["iPhone XS Max", "iPad Pro (11-inch) (2nd Generation)"], id: \.self) { deviceName in
-            ConnectionList()
+            MainConnectionList()
                 .environmentObject(ModelData())
                 .previewDevice(PreviewDevice(rawValue: deviceName))
                 .previewDisplayName(deviceName)

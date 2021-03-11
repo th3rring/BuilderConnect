@@ -14,24 +14,42 @@ struct ConnectionView: View {
 
 
     var body: some View {
-          WebView(webView: webViewStore.webView).onAppear {
-            self.webViewStore.webView.load(URLRequest(url: URL(string: connection.protocal + connection.address + ":" + connection.port)!, cachePolicy: .useProtocolCachePolicy))
+        
+        let urlString = connection.protocal + connection.address + ":" + connection.port
+        
+        return WebView(webView: webViewStore.webView).onAppear {
+            self.webViewStore.webView.load(URLRequest(url: URL(string: urlString)!, cachePolicy: .useProtocolCachePolicy))
+//            self.webViewStore.webView.load(URLRequest(url: URL(string: "https://www.yofla.com/black-screen/")!, cachePolicy: .useProtocolCachePolicy))
           }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
 //          .background(Color.black)
 //          .edgesIgnoringSafeArea(.all)
 //          .statusBar(hidden: true)
           .navigationBarBackButtonHidden(true)
           .navigationBarHidden(true)
-          .navigationBarTitle(Text(connection.address), displayMode: .inline)
+//          .navigationBarTitle(Text(connection.address), displayMode: .inline)
+          .navigationBarTitle(Text(""))
 
 }
     
 
 }
+
+func verifyUrl (urlString: String?) -> Bool {
+   if let urlString = urlString {
+       if let url = NSURL(string: urlString) {
+           return UIApplication.shared.canOpenURL(url as URL)
+       }
+   }
+   return false
+}
+
+
 struct ConnectionView_Previews: PreviewProvider {
     static var previews: some View {
-        ConnectionView(connection: ModelData().connections[0])
-            
+        ForEach(["iPhone XS Max", "iPad Pro (11-inch) (2nd Generation)"], id: \.self) { deviceName in
+            ConnectionView(connection: ModelData().connections[0])            .previewDevice(PreviewDevice(rawValue: deviceName))
+            .previewDisplayName(deviceName)
+        }
     }
 }
 
