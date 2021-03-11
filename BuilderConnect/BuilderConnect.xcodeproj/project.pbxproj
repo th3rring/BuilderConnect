@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		2208BB8125F975E100B7B42F /* NetworkExtension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2208BB8025F975E100B7B42F /* NetworkExtension.framework */; };
 		2208BB8325FA11D800B7B42F /* SplitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2208BB8225FA11D800B7B42F /* SplitView.swift */; };
-		2208BB8525FA12DA00B7B42F /* MainConnectionList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2208BB8425FA12DA00B7B42F /* MainConnectionList.swift */; };
-		2208BB8725FA138F00B7B42F /* DetailSplitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2208BB8625FA138F00B7B42F /* DetailSplitView.swift */; };
 		22850F3725F7665F008F6091 /* BuilderConnectApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22850F3625F7665F008F6091 /* BuilderConnectApp.swift */; };
 		22850F3925F7665F008F6091 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22850F3825F7665F008F6091 /* ContentView.swift */; };
 		22850F3B25F76662008F6091 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 22850F3A25F76662008F6091 /* Assets.xcassets */; };
@@ -48,8 +46,6 @@
 		2208BB7E25F975E100B7B42F /* BuilderConnect.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BuilderConnect.entitlements; sourceTree = "<group>"; };
 		2208BB8025F975E100B7B42F /* NetworkExtension.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = NetworkExtension.framework; path = System/Library/Frameworks/NetworkExtension.framework; sourceTree = SDKROOT; };
 		2208BB8225FA11D800B7B42F /* SplitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitView.swift; sourceTree = "<group>"; };
-		2208BB8425FA12DA00B7B42F /* MainConnectionList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainConnectionList.swift; sourceTree = "<group>"; };
-		2208BB8625FA138F00B7B42F /* DetailSplitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSplitView.swift; sourceTree = "<group>"; };
 		22850F3325F7665F008F6091 /* BuilderConnect.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BuilderConnect.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		22850F3625F7665F008F6091 /* BuilderConnectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderConnectApp.swift; sourceTree = "<group>"; };
 		22850F3825F7665F008F6091 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -178,8 +174,6 @@
 				22850F6E25F77376008F6091 /* ConnectionList.swift */,
 				22850F7025F7744F008F6091 /* ConnectionRow.swift */,
 				22850F6425F76815008F6091 /* WebView.swift */,
-				2208BB8425FA12DA00B7B42F /* MainConnectionList.swift */,
-				2208BB8625FA138F00B7B42F /* DetailSplitView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -341,7 +335,6 @@
 			files = (
 				22850F3925F7665F008F6091 /* ContentView.swift in Sources */,
 				22850F6925F76E5B008F6091 /* Connection.swift in Sources */,
-				2208BB8525FA12DA00B7B42F /* MainConnectionList.swift in Sources */,
 				22850F6525F76815008F6091 /* WebView.swift in Sources */,
 				22B63D5625F81C960089BBEB /* LocationManager.swift in Sources */,
 				22850F6225F766E3008F6091 /* ConnectionView.swift in Sources */,
@@ -349,7 +342,6 @@
 				22850F3725F7665F008F6091 /* BuilderConnectApp.swift in Sources */,
 				22850F7125F7744F008F6091 /* ConnectionRow.swift in Sources */,
 				22850F6F25F77376008F6091 /* ConnectionList.swift in Sources */,
-				2208BB8725FA138F00B7B42F /* DetailSplitView.swift in Sources */,
 				22850F6725F76E40008F6091 /* ModelConnection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

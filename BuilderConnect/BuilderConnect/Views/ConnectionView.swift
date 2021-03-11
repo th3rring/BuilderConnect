@@ -2,7 +2,7 @@
 //  ConnectionView.swift
 //  BuilderConnect
 //
-//  Created by Catherine Herring on 2021-03-09.
+//  Created by Thomas Herring on 2021-03-09.
 //
 
 import SwiftUI
@@ -19,7 +19,6 @@ struct ConnectionView: View {
         
         return WebView(webView: webViewStore.webView).onAppear {
             self.webViewStore.webView.load(URLRequest(url: URL(string: urlString)!, cachePolicy: .useProtocolCachePolicy))
-//            self.webViewStore.webView.load(URLRequest(url: URL(string: "https://www.yofla.com/black-screen/")!, cachePolicy: .useProtocolCachePolicy))
           }.frame(minWidth: 0, maxWidth: .infinity, minHeight: 0, maxHeight: .infinity)
 //          .background(Color.black)
 //          .edgesIgnoringSafeArea(.all)

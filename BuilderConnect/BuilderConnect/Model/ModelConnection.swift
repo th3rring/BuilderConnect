@@ -2,7 +2,7 @@
 //  ModelConnection.swift
 //  BuilderConnect
 //
-//  Created by Catherine Herring on 2021-03-09.
+//  Created by Thomas Herring on 2021-03-09.
 //
 
 import Foundation

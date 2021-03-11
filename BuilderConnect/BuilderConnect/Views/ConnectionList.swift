@@ -2,7 +2,7 @@
 //  ConnectionList.swift
 //  BuilderConnect
 //
-//  Created by Catherine Herring on 2021-03-09.
+//  Created by Thomas Herring on 2021-03-09.
 //
 
 import SwiftUI
@@ -34,8 +34,8 @@ struct ConnectionList: View {
         return NavigationView {
             List {
                 
-                Toggle(isOn: bind) {
-                    Text("Keep connection")
+                Toggle(isOn: bind) { 
+                    Text("Maintain Connection")
                 }
                 
                 ForEach(modelData.connections) { connection in
