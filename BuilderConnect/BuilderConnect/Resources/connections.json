@@ -3,7 +3,7 @@
     "name": "Pop!_OS Local",
     "id": 1001,
     "protocal" : "http://",
-    "address" : "192.168.86.43",
+    "address" : "192.168.1.1",
     "port" : "10000",
     "iconName" : "desktopcomputer"
 },
